@@ -1,0 +1,130 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+/* Light Mode (default) */
+body {
+  background-color: #121212;
+ color: white;
+}
+
+/* Dark Mode */
+/* body.dark-mode {
+  background-color: #1212;
+  color: #ffffff;
+}
+
+
+body.dark-mode .navbar {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+body.dark-mode a {
+  color: #ffffff;
+}
+
+body.dark-mode .navbar a:hover {
+  color: #dddddd;
+}
+
+
+ body.dark-mode .anime:hover {
+  border: none;
+ }
+ 
+ body.dark-mode .anime::after {
+  background-color: white;
+ } */
+
+.gradient {
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
+}
+
+.anime {
+  border: none;
+  position: relative;
+}
+
+.anime:hover {
+  border: none;
+}
+
+.anime::after {
+  content: " ";
+  position: absolute;
+  width: 0px;
+  height: 3px;
+  left: 50%;
+  bottom: -5px;
+  background-color: white;
+  transition: all ease-out 0.3s;
+}
+
+.anime:hover::after {
+  width: 100%;
+  left: 0%;
+}
+
+@import "tailwindcss";
+
+@theme {
+  /* --- Custom Colors --- */
+  --color-soft-primary: #84D187;
+  --color-primary: #00B207;
+  --color-hard-primary: #2C742F;
+  --color-warning: #FF8A00;
+  --color-danger: #EA4B48;
+  --color-pink: #C2185B;
+
+
+
+  --color-bg-deep: #1A1F2B;      /* Dark background */
+  --color-tag-bg: #2D3748;       /* Tech badge background */
+  --color-text-muted: #9CA3AF;   /* Muted Issued date */
+  --color-brand-green: #00B207;  /* Issuer name color */
+
+  /* Gradient for the button */
+  --color-preview-start: #3B82F6;
+  --color-preview-end: #A855F7;
+
+  
+  --color-green-gray-50: #EDF2EE;
+  --color-green-gray-400: #7A997C;
+  --color-green-gray-500: #618062;
+  --color-green-gray-600: #406B42;
+  --color-green-gray-700: #2B572E;
+  --color-green-gray-900: #002603;
+
+  /* --- Custom Screens (Breakpoints) --- */
+  --breakpoint-dxs: 300px;
+  --breakpoint-xxs: 400px;
+  --breakpoint-xsm: 458px;
+  --breakpoint-xs: 500px;
+  --breakpoint-ssm: 600px;
+  --breakpoint-smd: 800px;
+  --breakpoint-mmd: 860px;
+  --breakpoint-xmd: 930px;
+  --breakpoint-xlg: 1110px;
+  --breakpoint-xxl: 1390px;
+  --breakpoint-1490: 1490px;
+
+  /* --- Keyframes --- */
+  @keyframes htmlAnimation {
+    from { width: 0%; }
+    to { width: 90%; }
+  }
+  @keyframes cssAnimation {
+    from { width: 0%; }
+    to { width: 85%; }
+  }
+  /* ... Add your other keyframes here following the same pattern ... */
+
+  /* --- Animations --- */
+  --animate-html: htmlAnimation 2s ease-in-out forwards;
+  --animate-css: cssAnimation 2s ease-in-out forwards;
+  --animate-javascript: javascriptAnimation 2s ease-in-out forwards;
+  --animate-vite-react: viteReactAnimation 2s ease-in-out forwards;
+}
