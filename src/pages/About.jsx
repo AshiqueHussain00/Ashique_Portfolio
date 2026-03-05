@@ -44,10 +44,10 @@ const About = () => {
                                     label: "Website",
                                     value: (
                                         <Link
-                                            to="https://www.ashique-portfolio.tech/"
+                                            to="https://www.ashique-portfolio.info/"
                                             className=" hover:underline"
                                         >
-                                            ashique-portfolio.tech
+                                            ashique-portfolio.info
                                         </Link>
                                     )
                                 },
