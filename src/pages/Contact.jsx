@@ -190,7 +190,7 @@ function Contact() {
                                 placeholder="Message"
                                 rows="6"
                                 {...register('message', { required: 'Message is required' })}
-                                className="w-full px-4 pt-3 text-sm bg-gray-100 rounded-md text-black-900 outline-blue-600 focus-within:bg-transparent"
+                                className="w-full px-4 pt-3 text-sm bg-gray-100 rounded-md text-black-900 outline-blue-600"
                             />
                             {errors.message && (
                                 <p className="text-xs text-red-500">{errors.message.message}</p>
