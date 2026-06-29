@@ -11,7 +11,27 @@ import intro_section_with_responsiveness from '../assets/Projects images/intro s
 import css_design_task from '../assets/Projects images/css design task.png'
 import yoga_website from '../assets/Projects images/yoga website.png'
 import happy_website from '../assets/Projects images/happy website.png'
+import electronicRepairImage from '../assets/Projects images/electronicRepairImage.jpg'
 export const cardData = [
+    {
+    id: 0, // You can change this ID based on your list order
+    title: "Electronic Appliance Repair Platform",
+    description: "A full-stack appliance repair booking platform with a customer, technician, and admin dashboard. Features include role-based authentication, service catalog, and live status tracking.",
+    image: electronicRepairImage, // Make sure to import the image at the top of your file
+    link1: "https://electronic-repair-app.vercel.app/",
+    buttonText1: "Preview",
+    buttonText2: "GitHub",
+    link2: "https://github.com/AshiqueHussain00/electronic-repair-app",
+    technologies: [
+        "React 19", 
+        "TypeScript", 
+        "Vite", 
+        "Node.js", 
+        "Express", 
+        "Tailwind CSS", 
+        "Framer Motion"
+    ],
+},
     {
         id: 1,
         title: "Organic E-Commerce Shop Website",
